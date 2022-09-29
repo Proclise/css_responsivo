@@ -104,14 +104,13 @@ article button:hover {
 }
 
 @media screen and (max-width: 640px) {
-    .conteudo {
-        display: block;
-    }
+
 
     .container {
         max-width: 90%;
-    }
-
+        margin: 0 auto;
+     }
+ 
     #about {
         display: block;
         font-size: 1.5em;
@@ -128,9 +127,6 @@ article button:hover {
         margin-bottom: 32px;
     }
 
-    header div.container {
-        flex-direction: column;
-    }
 
 }
 
