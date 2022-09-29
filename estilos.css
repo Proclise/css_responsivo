@@ -1,0 +1,151 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Noto Sans Mono', monospace;
+    color: black;
+}
+
+header {
+    padding: 16px 0;
+    background-color: #f17c08;
+    color: #ecf0f1;
+}
+
+header nav li {
+    display: inline;
+    margin-left: 16px;
+    font-size: 22px;
+    font-weight: 900;
+}
+
+
+.container {
+    max-width: 1280px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+header .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+section .container {
+    align-items: flex-start;
+    margin-top: 50px;
+}
+
+
+
+section h2 {
+    color: #f17c08;
+    border-bottom: 2.5px solid #f17c08;
+    margin-bottom: 25px;
+    margin-top: 0px;
+}
+
+.produtos img {
+    max-width: 100%;
+}
+
+.produtos {
+    display: grid;
+    grid-template-columns: repeat(4, 24%);
+    column-gap: 1%;
+    row-gap: 5%;
+}
+
+
+.store-front {
+    height: 400px;
+    margin-top: 50px;
+    margin-right: 50px;
+}
+
+#about {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.sessao-produtos {
+    margin-top: 100px;
+}
+
+section h3 {
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: none;
+    font-size: 30px;
+}
+
+article p {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    margin-top: 20px;
+}
+
+article button {
+    font-family: Arial, Helvetica, sans-serif;
+    margin-top: 15px;
+    background-color: #f17c08;
+    color: #fff;
+    font-size: 15px;
+    border-radius: 5px;
+    padding: 10px 70px;
+    font-weight: bold;
+    border: none;
+}
+
+article button:hover {
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+@media screen and (max-width: 640px) {
+    .conteudo {
+        display: block;
+    }
+
+    .container {
+        max-width: 90%;
+    }
+
+    #about {
+        display: block;
+        font-size: 1.5em;
+    }
+
+    .store-front {
+        margin-right: 0px;
+    }
+
+    .produtos {
+        display: block;
+    }
+    .produtos .produtos-tenis {
+        margin-bottom: 32px;
+    }
+
+    header div.container {
+        flex-direction: column;
+    }
+
+}
+
+
+@media screen and (min-width: 641px) and (max-width: 1023px) {
+    .container {
+        max-width: 90%;
+    }
+
+    #about {
+        font-size: 1.5em;
+        display: block;      
+    }
+
+    .produtos {
+        grid-template-columns: repeat(2 , 49%);
+    }
+}
