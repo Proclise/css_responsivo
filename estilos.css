@@ -108,9 +108,9 @@ article button:hover {
 
     .container {
         max-width: 90%;
-        margin: 0 auto;
-     }
- 
+    }
+
+
     #about {
         display: block;
         font-size: 1.5em;
@@ -118,6 +118,7 @@ article button:hover {
 
     .store-front {
         margin-right: 0px;
+        width: 100%;
     }
 
     .produtos {
