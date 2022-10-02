@@ -128,6 +128,10 @@ article button:hover {
         margin-bottom: 32px;
     }
 
+    article button {
+        width: 100%;
+    }
+
 
 }
 
